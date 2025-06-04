@@ -2,14 +2,573 @@
 import "../../styles/global.css";
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Carousel from "../../layouts/components/carousel.astro";
+import CardBottom from "../../layouts/components/cardBottom.astro";
 import Timeline from "../../layouts/components/timeline.astro";
 ---
 <BaseLayout title="Thunder Road - Malice Mizer">
-  <section class="text-center py-16">
-    <h1 class="mb-5 text-5xl font-bold">Malice Mizer</h1>
-     <Carousel />
-     <Timeline />
+  <section class="text-center py-4">
+     <!-- <Carousel /> -->
+      <div class="hero bg-base-200 min-h-80">
+  <div class="hero-content flex-col lg:flex-row">
+    <img
+      src="/images/mm/mmtkntts.jpg"
+      class="max-w-sm rounded-lg shadow-2xl"
+    />
+    <div>
+      <h1 class="text-5xl font-bold">Malice Mizer</h1>
+      <p class="py-6">
+        The legendary Visual Kei band, part of the Big 4 of Visual Kei along La'cryma Christi, Fanatic Crisis and Shazna. Tetsu was their first vocalist, performing with the band from 1992 to 1994.
+        Only one official release features his vocals, although some demo tapes exist.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="min-h-80 py-4 px-2 flex justify-center">
+     <!-- <Timeline /> -->
+  <div class="w-4xl">
+  <h1>Timeline</h1>
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+  <li>
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">1992</time>
+      <div><img src="/images/mm/tl1.jpg"/></div>
+      <div class="text-lg font-black">First Demo with Malice Mizer</div>
+      The demo tape, named SANS LOGIQUE (a reference to the French singer Mylène Farmer) was released. Only a few copies of it exist, but many bootlegs and fakes exist.
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end md:mb-10">
+      <time class="font-mono italic">1992</time>
+      <div class="text-lg font-black">First Live with Malice Mizer</div>
+      This first live is where SANS LOGIQUE was distributed to the attendees
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">1993</time>
+      <div class="text-lg font-black">SADNESS demo</div>
+      <div><img src="/images/mm/tl3.jpg"/></div>
+      This tape was distributed to the attendees of a concert in April 1993. It also features GAZ in drums. This tape is also very hard to find, since many fakes exist.
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end md:mb-10">
+      <time class="font-mono italic">October 12, 1993</time>
+      <div class="text-lg font-black">The 1st anniversary @ Meguro ROCK-MAYKAN</div>
+      <div><img src="/images/mm/tl4.jpg"/></div>
+      <a href="https://youtu.be/v_NZnoybi88?si=_pypkIrL4oy81shW" role="button" class="btn">Full Video</a>
+      <br />
+      <div class="collapse bg-base-100 border-base-300 border py-2">
+        <input type="checkbox" />
+        <div class="collapse-title font-semibold">Setlist</div>
+        <div class="collapse-content text-sm">
+          <div class="overflow-x-auto">
+            <table class="table table-zebra">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Song</th>
+                  <th>Romaji</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td>Temptation of Widow</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td><ruby> 終<rt>しゅう</rt>幕<rt>まく</rt>へ<rt></rt>の<rt></rt>扉<rt>とびら</rt></ruby></td>
+                  <td>Shuumaku e no Tobira</td>
+                </tr>      
+                <tr>
+                  <th>3</th>
+                  <td><ruby>白<rt>はく</rt>昼<rt>ちゅう</rt></ruby>のワルツ</td>
+                  <td>Hakuchuu no Waltz</td>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <td>SPEED OF DESPERATE</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>5</th>
+                  <td>16のソリチュード</td>
+                  <td>16 no Solitude</td>
+                </tr>
+                <tr>
+                  <th>6</th>
+                  <td>バロック</td>
+                  <td>Baroque</td>
+                </tr>
+                <tr>
+                  <th>7</th>
+                  <td><ruby>前<rt>ぜん</rt>兆<rt>ちょう</rt></ruby></td>
+                  <td>Zenchou</td>
+                </tr>
+                <tr>
+                  <th>8</th>
+                  <td>ポルトガル</td>
+                  <td>Portugal</td>
+                </tr>
+                <tr>
+                  <th>9</th>
+                  <td><ruby>記<rt>き</rt>憶<rt>おく</rt></ruby>と<ruby>空<rt>そら</rt></ruby></td>
+                   <td>Kioku to Sora</td>
+                </tr>
+                <tr>
+                  <th>10</th>
+                  <td>LAFFLESIA</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+    
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">November 3, 1993</time>
+      <div class="text-lg font-black">Higeki no Bansan @ Shinjuku LOFT</div>
+      <div><img src="/images/mm/tl5.jpg"/></div>
+      <a href="https://youtu.be/bthk2nhj97s?si=zswVV_GJxOk0e2r8" role="button" class="btn">Link</a>
+      
+      <div class="collapse bg-base-100 border-base-300 border py-2">
+        <input type="checkbox" />
+        <div class="collapse-title font-semibold">Setlist</div>
+  <div class="collapse-content text-sm">
+    <div class="overflow-x-auto">
+      <table class="table table-zebra">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Song</th>
+            <th>Romaji</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>バロック</td>
+            <td>Baroque</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>FREEZE ME</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>ポルトガル</td>
+            <td>Portugal</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td><ruby>記<rt>き</rt>憶<rt>おく</rt></ruby>と<ruby>空<rt>そら</rt></ruby></td>
+            <td>Kioku to Sora</td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td><ruby>魅<rt>み</rt>惑<rt>わく</rt></ruby>の<ruby>ローマ<rt>ローマ</rt></ruby></td>
+            <td>Miwaku no Roma</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>LAFFLESIA</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>SERAPH</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
+      
+    </div>
+    <hr />
+  </li>
+   <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end md:mb-10">
+      <time class="font-mono italic">June 4, 1994</time>
+      <div class="text-lg font-black">Live @ Shinjuku LOFT</div>
+      <div><img src="/images/mm/tl6.jpg"/></div>
+      <a href="https://youtu.be/NyBT3TSiF54?si=SWXpzTRI2DHRaQDP" role="button" class="btn">Full Video</a>
+      <div class="collapse bg-base-100 border-base-300 border py-2">
+  <input type="checkbox" />
+  <div class="collapse-title font-semibold">Setlist</div>
+  <div class="collapse-content text-sm">
+    <div class="overflow-x-auto">
+      <table class="table table-zebra">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Song</th>
+            <th>Romaji</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td><ruby>死<rt>し</rt></ruby>の<ruby>舞<rt>ぶ</rt>踏<rt>とう</rt></ruby></td>
+            <td>Shi no Butō</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td><ruby>魅<rt>み</rt>惑<rt>わく</rt></ruby>の<ruby>ローマ<rt>ローマ</rt></ruby></td>
+            <td>Miwaku no Roma</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>バロック</td>
+            <td>Baroque</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>SADNESS</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td><ruby>前<rt>ぜん</rt>兆<rt>ちょう</rt></ruby></td>
+            <td>Zenchō</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>SERAPH</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>ポルトガル</td>
+            <td>Portugal</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td><ruby>エーゲ<rt>エーゲ</rt>海<rt>かい</rt></ruby>に<ruby>捧<rt>ささ</rt>ぐ<rt>ぐ</rt></ruby></td>
+            <td>Aegean umi ni sasagu</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">July 24, 1994</time>
+      <div class="text-lg font-black">Release of memoire</div>
+      <div><img src="/images/mm/memoire.jpg"/></div>
+      This initial release contained six tracks, with only 3000 copies made. Each one had a unique serial number.
+    </div>
+    <hr />
+  </li>
+   <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end md:mb-10">
+      <time class="font-mono italic">1994</time>
+      <div class="text-lg font-black">Cher de Memoire Tour</div>
+      <div><img src="/images/mm/tl8.jpg"/></div>
+      This tour had 15 dates, the last one being completely sold out. DUring this time, memoire got a second press which also sold out.
+    </div>
+    <hr />
+  </li>
+   <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">1994</time>
+      <div class="text-lg font-black">Release of memoire DX</div>
+       <div><img src="/images/mm/tl9.jpg"/></div>
+      After the Cher de Memoire tour, the band decided to add another song to memoire: Baroque. This last press included a slipcase and an extra photo book.
+    </div>
+    <hr />
+  </li>
+   <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end md:mb-10">
+      <time class="font-mono italic">December 27, 1994</time>
+      <div class="text-lg font-black">Cher de Memoire II Tour Final</div>
+      <div><img src="/images/mm/tl10.jpg"/></div>
+      <a href="https://youtu.be/U9MvKkRbDoQ?si=912E8XiU57CudLHk" role="button" class="btn">Full Video</a><br />
+      <div class="collapse bg-base-100 border-base-300 border py-2">
+  <input type="checkbox" />
+  <div class="collapse-title font-semibold">Setlist</div>
+  <div class="collapse-content text-sm">
+    <div class="overflow-x-auto">
+      <table class="table table-zebra">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Song</th>
+            <th>Romaji</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>ma chérie</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td><ruby>午<rt>ご</rt>後<rt>ご</rt></ruby>の<ruby>ささやき<rt>ささやき</rt></ruby></td>
+            <td>Gogo no Sasayaki</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>バロック</td>
+            <td>Baroque</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>LAFFLESIA</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td><ruby>魅<rt>み</rt>惑<rt>わく</rt></ruby>の<ruby>ローマ<rt>ローマ</rt></ruby></td>
+            <td>Miwaku no Roma</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>ポルトガル</td>
+            <td>Portugal</td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td><ruby>白<rt>はく</rt>昼<rt>ちゅう</rt></ruby>の<ruby>ワルツ<rt>ワルツ</rt></ruby></td>
+            <td>Hakuchū no Waltz</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>SPEED OF DESPERATE</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>16のソリチュード</td>
+            <td>16 no Solitude</td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td><ruby>エーゲ<rt>エーゲ</rt>海<rt>かい</rt></ruby>に<ruby>捧<rt>ささ</rt>ぐ<rt>ぐ</rt></ruby></td>
+            <td>Aegean umi ni sasagu</td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td><ruby>少<rt>しょう</rt>女<rt>じょ</rt></ruby>の<ruby>瞳<rt>ひとみ</rt></ruby></td>
+            <td>Shōjo no Hitomi</td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td><ruby>記<rt>き</rt>憶<rt>おく</rt></ruby>と<ruby>空<rt>そら</rt></ruby></td>
+            <td>Kioku to Sora</td>
+          </tr>
+          <tr>
+            <th>13</th>
+            <td><ruby>死<rt>し</rt></ruby>の<ruby>舞<rt>ぶ</rt>踏<rt>とう</rt></ruby></td>
+            <td>Shi no Butō</td>
+          </tr>
+          <tr>
+            <th>14</th>
+            <td>SADNESS</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td><ruby>前<rt>ぜん</rt>兆<rt>ちょう</rt></ruby></td>
+            <td>Zenchō</td>
+          </tr>
+          <tr>
+            <th>16</th>
+            <td>SERAPH</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+      The band was becoming so popular, another tour was held. Tetsu decided to part ways with the band after the last live of this tour.             
+      Many theories exist as to why he quit the band, but during a recent live in Taiwan with Kozi, 
+      he mentioned that he just wanted to try a different style of music, which can be seen in his following projects. 
+      He remains in good terms with the rest of the members, and remembers fondly his years with Malice Mizer.
+    </div>
+    <hr />
+  </li>
+</ul>
+
+      </div>
+      <!-- end of timeline -->
+
+</div>
+       <div>
+        <div class=" flex-col lg:flex-row">
+  <h1>Discography</h1>
+  <CardBottom title="memoire" comment="nil - lilill" img="/images/mm/memoire.jpg"></CardBottom>
+</div>
+       </div>
   </section>
 </BaseLayout>

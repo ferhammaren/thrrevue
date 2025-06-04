@@ -10,13 +10,16 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
   </head>
-  <body class="font-sans base-100text-gray-900">
-    <header class="bg-base-200 p-2">
+  <body class="font-sans base-100 text-gray-900 h-screen">
+    <div class="flex min-h-full flex-col">
+    <header class="bg-base-200">
+      <img src="/images/header-cropped.png" />
       <Navbar />
     </header>
     <main>
       <slot />
     </main>
+    </div>
    <Footer />
   </body>
 </html>
