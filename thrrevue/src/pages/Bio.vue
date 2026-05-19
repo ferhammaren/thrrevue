@@ -1,0 +1,115 @@
+<template>
+  <MainLayout>
+    <section class="p-2 space-y-2">
+      <section class="shadow-md rounded-lg hero bg-base-200 min-h-[30vh]">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img :src="BioImage" alt="TakanoTetsu" class="shadow-xl rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">
+              <ruby> 高<rp>(</rp>
+                <rt class="text-sm">たか</rt>
+                <rp>)</rp>野<rp>(</rp>
+                <rt class="text-sm">の</rt>
+                <rp>)</rp> 哲<rp>(</rp>
+                <rt class="text-sm">てつ</rt>
+                <rp>)</rp>
+              </ruby>
+            </h1>
+            <div>
+              <p class="text-sm">Name</p>
+              <p class="text-lg">
+                Takano Tetsu
+              </p>
+            </div>
+            <div class="py-2">
+              <p class="text-sm">Birthdate</p>
+              <p class="text-lg">
+                December 12, 1972
+              </p>
+            </div>
+            <div class="py-2">
+              <p class="text-sm">Place of Origin</p>
+              <p class="text-lg">
+                Obihiro, Hokkaido
+              </p>
+            </div>
+            <div class="py-2">
+              <p class="text-sm">Instruments</p>
+              <p class="text-lg">
+                Vocal, guitar
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Timeline -->
+       <section class="shadow-md rounded-lg hero bg-base-200 min-h-[30vh]">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+             <Timeline :items="timelineItems" />
+        </div>
+      </section>
+      <!-- End timeline -->
+    </section>
+
+  </MainLayout>
+</template>
+
+<script setup lang="ts">
+import MainLayout from "@/layouts/MainLayout.vue"
+import BioImage from "@/UI/images/bio.jpg"
+import Timeline from "@/UI/Organisms/Timeline.vue"
+const timelineItems = [
+  {
+    year: "1991",
+    title: "Ner-vous",
+    description: "Only played for two shows before they disbanded"
+  },
+  {
+    year: "1992",
+    title: "Malice Mizer",
+    description: "He became the first vocalist of Malice Mizer, where he recorded one album, Memoire, before leaving in December of 1994."
+  },
+  {
+    year: "1995",
+    title: "Mega8Ball",
+    description: "He formed the band with Yasu on guitar, Rikiji on bass and Nori on drums. Mega8Ball toured from 1996 and 1997 until the release of their first album, Hybrid. They disbanded on December 29, 1997. The band later regrouped without Tetsu in 2001."
+  },
+    {
+    year: "1998",
+    title: "nil",
+    description: "Debuted in Tokyo in January of 1998, where he provides vocals and guitar. The band paused activities at the end of that year but resumed their work in 2002"
+  },
+    {
+    year: "1999",
+    title: "Zigzo",
+    description: "This band was formed by Ryo and Den (By-Sexual) and Sakura (L'Arc-en-Ciel). Tetsu joined in the summer of 1998 as the primary songrwriter and lyricist. They disbanded in 2002 and restarted activities on March 2012."
+  },
+  {
+    year: "2002",
+    title: "Afro Skull Records is founded.",
+    description: "Tetsu started his own record label in September 2002"
+  },
+  {
+    year: "2010",
+    title: "The JuneJulyAugust",
+    description: "Tetsu formed this band with Koji Kajiwara on drums and Hajime Sato on piano."
+  },
+  {
+    year: "2015",
+    title: "The Black Comet Club Band",
+    description: "This band was formed along with Masaru Kobayashi, Kazama Hiroyuki and Hajime Sato, plus Jin Terui as a second drummer."
+  },
+  {
+    year: "2022",
+    title: "Disco Volante",
+    description: "Some of the members of The Black Comet Club Band formed this band (Tetsu, Masaru Kobayashi and Jin Terui), with Tooru Yoshida on piano."
+  },
+  {
+    year: "2024",
+    title: "Sillys",
+    description: "In February of 2024 it was announced that this band was going to be formed by Tetsu on guitar and vocals, Chirolyn on bass and vocals and Seizi Kimura on drums and vocals."
+  },
+]
+</script>
