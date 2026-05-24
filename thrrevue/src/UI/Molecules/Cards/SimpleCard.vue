@@ -1,10 +1,9 @@
 <template>
-  <div class="card bg-base-100 w-96 shadow-sm">
+  <div class="card bg-base-100">
     <figure>
       <slot name="image" />
     </figure>
-
-    <div class="card-body">
+    <div class="card-body title">
       <slot name="title" />
       <slot />
       <div class="card-actions justify-end">
@@ -13,3 +12,4 @@
     </div>
   </div>
 </template>
+

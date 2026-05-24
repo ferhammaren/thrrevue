@@ -1,5 +1,5 @@
 <template>
-  <li v-for="item in items" :key="item.label">
+  <li v-for="item in items" :key="item.label" class="title text-primary">
 
     <!-- If it has children -> dropdown -->
     <details v-if="item.children?.length">
@@ -9,7 +9,7 @@
         <RouterLink
           v-if="item.to"
           :to="item.to"
-          class="font-medium"
+          class="font-medium text-lg"
           @click.stop
         >
           {{ item.label }}
@@ -27,7 +27,7 @@
     </details>
 
     <!-- Normal item (no children) -->
- <RouterLink v-else-if="item.to" :to="item.to">
+ <RouterLink v-else-if="item.to" :to="item.to" class="text-lg hover:bg-base-content/40">
   {{ item.label }}
 </RouterLink>
 

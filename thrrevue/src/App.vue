@@ -1,5 +1,5 @@
 <template>
-  <div data-theme="caramellatte">
+  <div data-theme="halloween">
     <RouterView />
   </div>
 </template>

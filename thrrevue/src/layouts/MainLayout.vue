@@ -1,5 +1,5 @@
 <template>
-  <div data-theme="caramellatte" class="min-h-screen flex flex-col">
+  <div class="min-h-screen flex flex-col bg-gradient-to-b from-base-100 to-base-200">
     <Banner />
     <!-- NAVBAR -->
     <Navbar brand="TKNTT" :items="navItems" />
@@ -41,6 +41,8 @@ const navItems = [
   },
   { label: "Discography", to: "/Discography" },
   { label: "Tour Dates", to: "/TourDates" },
+  { label: "Media", to: "/Media" },
   { label: "News", to: "/News" },
+  { label: "About", to: "/About" }
 ]
 </script>

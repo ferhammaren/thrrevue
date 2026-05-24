@@ -3,23 +3,23 @@ import bannerImage from "@/UI/art/banner1.png"
 </script>
 <template>
   <section
-    class="hero min-h-[40vh] bg-cover bg-top"
+    class="hero min-h-[10vh] lg:min-h-[30vh] bg-cover bg-top"
     :style="{
       backgroundImage: `url(${bannerImage})`
     }"
   >
     <div class="hero-overlay bg-base-200/30"></div>
 
-    <div class="hero-content text-left text-accent">
+    <div class="hero-content text-left text-primary">
       <div class="max-w-xl">
 
         <!-- Title -->
-        <h1 class="mb-5 text-5xl md:text-5xl font-black tracking-tight">
+        <h1 class="title mb-5 text-5xl md:text-5xl font-black tracking-tight">
           TKNTT
         </h1>
 
         <!-- Subtitle -->
-        <p class="mb-5 text-lg md:text-xl opacity-90">
+        <p class="subtitle mb-5 text-lg md:text-xl opacity-90">
           Music, live shows, merch, and updates.
         </p>
 
@@ -38,3 +38,8 @@ import bannerImage from "@/UI/art/banner1.png"
     </div>
   </section>
 </template>
+<style scoped>
+.title, .subtitle {
+  font-family: 'Fjalla One', sans-serif;
+}
+</style>

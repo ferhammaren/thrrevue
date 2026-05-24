@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=BIZ+UDPMincho&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fjalla+One&display=swap');
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: light --default, dark --prefersdark, caramellatte, business;
+  themes: light --default, dark --prefersdark, caramellatte, autumn, halloween;
+}
+.title, .subtitle {
+  font-family: 'Fjalla One', sans-serif;
+}
+.post-content, .content{
+   font-family: 'Cormorant Garamond', serif;
+}
+.japanese{
+  font-family: "BIZ UDPMincho", serif;
 }

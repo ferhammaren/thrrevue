@@ -1,12 +1,12 @@
 <template>
-  <div data-theme="caramellatte" class="min-h-screen flex flex-col">
+ <div class="min-h-screen flex flex-col bg-gradient-to-b from-base-100 to-base-200">
 
     <!-- NAVBAR -->
     <Navbar brand="TKNTT" :items="navItems" />
 
     <!-- PAGE CONTENT -->
     <main class="flex-1">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <Hero />
         <slot />
       </div>
@@ -42,6 +42,8 @@ const navItems = [
   },
   { label: "Discography", to: "/Discography" },
   { label: "Tour Dates", to: "/TourDates" },
+  { label: "Media", to: "/Media" },
   { label: "News", to: "/News" },
+  { label: "About", to: "/About" }
 ]
 </script>

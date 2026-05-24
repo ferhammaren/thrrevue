@@ -83,6 +83,16 @@ const router = createRouter({
       name:"",
       component:() => import("@/pages/Discography/Discography.vue")
     },
+    {
+      path:"/:band/:slug",
+      name:"album",
+      component:() => import("@/pages/Discography/InfoPage.vue")
+    },
+     {
+      path:"/Media",
+      name:"Media",
+      component:() => import("@/pages/Media.vue")
+    },
      {
       path:"/TourDates",
       name:"",

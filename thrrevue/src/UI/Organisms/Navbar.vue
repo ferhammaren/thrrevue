@@ -1,19 +1,16 @@
 <template>
-  <div class="navbar bg-base-100 shadow-sm  relative z-50">
+  <div class="navbar bg-base-100 shadow-sm relative z-50">
 
     <!-- START -->
     <div class="navbar-start">
 
       <!-- MOBILE DROPDOWN -->
       <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost text-xl lg:hidden">
           ☰
         </div>
 
-        <ul
-          tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box  w-52  shadow"
-        >
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box w-3xl shadow">
           <MenuItems :items="items ?? []" />
         </ul>
       </div>
