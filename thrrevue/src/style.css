@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=BIZ+UDPMincho&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fjalla+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=BIZ+UDPMincho&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fjalla+One&display=swap');
 @import "tailwindcss";
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark, caramellatte, autumn, halloween;
+}
+@plugin "daisyui/theme" {
+  name: "halloween";
+  default: true;
+  --color-primary: #c90002;
 }
 .title, .subtitle {
   font-family: 'Fjalla One', sans-serif;
@@ -11,4 +16,225 @@
 }
 .japanese{
   font-family: "BIZ UDPMincho", serif;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=BIZ+UDPMincho&family=Barlow+Condensed:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&family=Permanent+Marker&family=Fjalla+One&display=swap');
+
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, caramellatte, autumn, halloween, xerox;
+}
+
+@plugin "daisyui/theme" {
+  name: "xerox";
+  default: true;
+  color-scheme: light;
+
+  /* Urgent red */
+  --color-primary: #e00016;
+  --color-primary-content: #ffffff;
+
+  /* Muted ochre / aged paper accent */
+  --color-secondary: #c4b583;
+  --color-secondary-content: #171717;
+
+  /* Optional acidic green for special accents */
+  --color-accent: #39ff14;
+  --color-accent-content: #111111;
+
+  --color-neutral: #171717;
+  --color-neutral-content: #f5f3e9;
+
+  /* Newsprint palette */
+  --color-base-100: #f5f3e9;
+  --color-base-200: #deddd4;
+  --color-base-300: #b5b4ac;
+  --color-base-content: #171717;
+
+  --color-info: #1769ff;
+  --color-info-content: #ffffff;
+  --color-success: #287a37;
+  --color-success-content: #ffffff;
+  --color-warning: #c4b583;
+  --color-warning-content: #111111;
+  --color-error: #e00016;
+  --color-error-content: #ffffff;
+
+  /* Squared-off, print-like components */
+  --radius-selector: 0rem;
+  --radius-field: 0rem;
+  --radius-box: 0rem;
+
+  --border: 2px;
+}
+
+/* Typography */
+:root {
+  font-family: "IBM Plex Mono", monospace;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --xerox-red: #e00016;
+  --xerox-yellow: #c4b583;
+  --xerox-green: #39ff14;
+  --xerox-black: #171717;
+  --xerox-paper: #f5f3e9;
+  --xerox-gray: #deddd4;
+}
+
+.title,
+.subtitle {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+}
+
+.post-content,
+.content {
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.7;
+}
+
+.japanese {
+  font-family: "BIZ UDPMincho", serif;
+}
+
+.marker {
+  font-family: "Permanent Marker", cursive;
+}
+
+.display-condensed {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+}
+
+/* Graphic treatment */
+.ink-border {
+  border: 2px solid var(--xerox-black);
+}
+
+.ink-divider {
+  border: 0;
+  border-top: 3px solid var(--xerox-black);
+}
+
+.red-stamp {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  background: var(--xerox-red);
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+}
+
+.marker-highlight {
+  background: var(--xerox-yellow);
+  color: var(--xerox-black);
+  padding: 0 0.2em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.tape {
+  position: relative;
+}
+
+.tape::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  width: 4rem;
+  height: 1rem;
+  background: color-mix(in srgb, var(--xerox-yellow) 75%, transparent);
+  transform: translateX(-50%) rotate(-3deg);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.rough-card {
+  border: 2px solid var(--xerox-black);
+  border-radius: 0;
+  box-shadow: 5px 5px 0 var(--xerox-black);
+  transition: transform 120ms steps(2, end),
+              box-shadow 120ms steps(2, end);
+}
+
+.rough-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 var(--xerox-red);
+}
+
+.rough-button {
+  border: 2px solid var(--xerox-black);
+  border-radius: 0;
+  background: var(--xerox-red);
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 0 var(--xerox-black);
+  transition: transform 100ms steps(2, end),
+              box-shadow 100ms steps(2, end);
+}
+
+.rough-button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--xerox-black);
+}
+
+/* Subtle photocopy texture */
+.paper-texture {
+  background-image:
+    radial-gradient(
+      rgb(23 23 23 / 8%) 0.6px,
+      transparent 0.6px
+    );
+  background-size: 4px 4px;
+}
+
+.toner-shadow {
+  text-shadow: 2px 2px 0 var(--xerox-red);
+}
+
+/* Content-driven entrance */
+@keyframes cut-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-12px);
+    clip-path: inset(0 100% 0 0);
+  }
+
+  65% {
+    opacity: 1;
+    transform: translateX(2px);
+    clip-path: inset(0 0 0 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.cut-in {
+  animation: cut-in 260ms steps(5, end) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
