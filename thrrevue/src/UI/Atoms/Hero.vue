@@ -60,7 +60,7 @@ import bannerImage from "@/UI/art/banner1.png"
                  text-base-100 sm:text-8xl
                  lg:text-[10rem]"
         >
-          高野 哲<span class="text-primary">!</span>
+          高野<span class="text-primary">!</span> 哲<span class="text-primary">!</span>
         </h1>
 
         <div class="mt-6 max-w-lg">

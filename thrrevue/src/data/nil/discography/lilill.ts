@@ -1,7 +1,7 @@
 import coverImage from "@/UI/images/nil/lilill.jpg"
 export default {
     release: {
-        title:"lil ill",
+        title:"all songs is love song",
         info: {
             coverImage,
             rows: [

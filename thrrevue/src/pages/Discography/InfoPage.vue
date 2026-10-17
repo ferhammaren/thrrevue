@@ -75,13 +75,13 @@
               <span>01</span>
               <span>RELEASE INFORMATION</span>
             </div>
-
+            
             <ZebraList
               class="album-info-table"
               :rows="album.raw.release.info.rows"
               :columnHeader="album.raw.release.info.columnHeader"
             />
-
+            
             <!-- Desktop streaming links -->
             <nav
               v-if="album.streaming && Object.keys(album.streaming).length"
@@ -105,15 +105,21 @@
                   <path :d="icons[service as StreamingService].path" />
                 </svg>
               </a>
-            </nav>
+            </nav><br />
+            <div class="section-kicker">
+              <span>02</span>
+              <span>NOTES</span>
+            </div>
+            <div class="album-notes">{{ album.raw.release.info.notes }}</div>
           </div>
+       
         </section>
 
         <!-- Track list -->
         <section class="tracklist-section">
           <div class="section-heading">
             <div class="section-kicker">
-              <span>02</span>
+              <span>03</span>
               <span>CONTENTS</span>
             </div>
 
